@@ -341,11 +341,15 @@ function shareText(score) {
         return '倒计时多了' + ((deviation_time / 1000) - 20).toFixed(2) + "s";
     }
     SubmitResults();
+    if (score <= 19) return 'kuso';
+    if (score <= 1) return '哼啊，为什么不哼！？';
+    if (score <= 29) return '哼啊';
+    if (score <= 39) return '哼？？';
     if (score <= 49) return '不哼口味吗？';
     if (score <= 99) return '哼？';
     if (score <= 149) return '不愧是哼，哼啊啊啊';
     if (score <= 199) return '您';
-    return '人？';
+    return '牛啊 哼傻了都';
 }
 
 function toStr(obj) {
