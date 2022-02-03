@@ -341,8 +341,8 @@ function shareText(score) {
         return '倒计时多了' + ((deviation_time / 1000) - 20).toFixed(2) + "s";
     }
     SubmitResults();
-    if (score <= 19) return 'kuso';
-    if (score <= 1) return '哼啊，为什么不哼！？';
+    if (score <= 1) return 'kuso';
+    if (score <= 19) return '哼啊，为什么不哼！？';
     if (score <= 29) return '哼啊';
     if (score <= 39) return '哼？？';
     if (score <= 49) return '不哼口味吗？';
