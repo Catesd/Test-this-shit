@@ -154,7 +154,7 @@ function encrypt(text){
 
 function SubmitResults() {
     var system = "其他操作系统";
-    var area = "异世界";
+    var area = "?";
     if (document.getElementById("username").value) {
         if (navigator.appVersion.indexOf("Win") != -1) system = "Windows";
         if (navigator.appVersion.indexOf("Mac") != -1) system = "Macintosh";
@@ -341,9 +341,9 @@ function shareText(score) {
         return '倒计时多了' + ((deviation_time / 1000) - 20).toFixed(2) + "s";
     }
     SubmitResults();
-    if (score <= 49) return '不合口味吗？';
-    if (score <= 99) return '乐希来全吃了';
-    if (score <= 149) return '老板不仅有钱长得帅还很有眼光';
+    if (score <= 49) return '不哼口味吗？';
+    if (score <= 99) return '哼？';
+    if (score <= 149) return '不愧是哼，哼啊啊啊';
     if (score <= 199) return '您';
     return '人？';
 }
@@ -408,7 +408,7 @@ function goRank() {
     }
     window.location.href=link;
 }
-console.log("不修改，好嘛？乱传又有什么用呢？(ˉ▽ˉ；)...")
+console.log("(ˉ▽ˉ；)...")
 document.onkeydown = function (e) {
     if (e.keyCode == 123) {
         return false
